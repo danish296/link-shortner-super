@@ -1,0 +1,71 @@
+<svg width="1200" height="340" viewBox="0 0 1200 340" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LinkShort — short links, QR codes and click analytics">
+  <defs>
+    <radialGradient id="glowBrand" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#2f55f0" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#2f55f0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowAccent" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#c9f94e" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#c9f94e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="area" x1="684" y1="150" x2="684" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2f55f0" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#2f55f0" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="340" rx="22" fill="#050608"/>
+  <rect x="0.5" y="0.5" width="1199" height="339" rx="21.5" stroke="#aaafbd" stroke-opacity="0.16"/>
+  <ellipse cx="1010" cy="30" rx="330" ry="220" fill="url(#glowBrand)"/>
+  <ellipse cx="150" cy="330" rx="300" ry="180" fill="url(#glowAccent)"/>
+
+  <g>
+    <rect x="64" y="64" width="56" height="56" rx="15" fill="#2f55f0"/>
+    <g transform="translate(76 76) scale(1.25)" stroke="#ffffff" stroke-width="2.1" stroke-linecap="round">
+      <path d="M13.2 18.8a4.2 4.2 0 0 1 0-5.9l2.4-2.4a4.2 4.2 0 0 1 5.9 5.9l-1.2 1.2"/>
+      <path d="M18.8 13.2a4.2 4.2 0 0 1 0 5.9l-2.4 2.4a4.2 4.2 0 0 1-5.9-5.9l1.2-1.2"/>
+    </g>
+    <circle cx="107" cy="77" r="4" fill="#c9f94e"/>
+  </g>
+
+  <text x="140" y="110" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="38" font-weight="600" letter-spacing="-1.1" fill="#eef0f4">LinkShort</text>
+  <text x="141" y="143" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" fill="#9aa1ae">Short links, QR codes and click analytics — self-hosted.</text>
+
+  <g font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500">
+    <rect x="140" y="172" width="118" height="30" rx="15" fill="#16181c" stroke="#aaafbd" stroke-opacity="0.18"/>
+    <text x="199" y="191" text-anchor="middle" fill="#eef0f4">Next.js 15</text>
+    <rect x="268" y="172" width="86" height="30" rx="15" fill="#16181c" stroke="#aaafbd" stroke-opacity="0.18"/>
+    <text x="311" y="191" text-anchor="middle" fill="#eef0f4">SQLite</text>
+    <rect x="364" y="172" width="118" height="30" rx="15" fill="#16181c" stroke="#aaafbd" stroke-opacity="0.18"/>
+    <text x="423" y="191" text-anchor="middle" fill="#eef0f4">Self-hosted</text>
+  </g>
+
+  <g>
+    <rect x="660" y="52" width="480" height="236" rx="20" fill="#16181c" stroke="#aaafbd" stroke-opacity="0.16"/>
+    <text x="684" y="89" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" letter-spacing="1.5" fill="#9aa1ae">CLICKS · LAST 30 DAYS</text>
+    <text x="684" y="130" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="600" letter-spacing="-1" fill="#eef0f4">23.1k</text>
+    <rect x="780" y="104" width="62" height="26" rx="13" fill="#c9f94e" fill-opacity="0.14"/>
+    <text x="811" y="122" text-anchor="middle" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#c9f94e">+18.4%</text>
+
+    <g font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#9aa1ae">
+      <circle cx="1012" cy="85" r="4" fill="#2f55f0"/>
+      <text x="1023" y="89">clicks</text>
+      <circle cx="1072" cy="85" r="4" fill="#c9f94e"/>
+      <text x="1083" y="89">uniques</text>
+    </g>
+
+    <g stroke="#aaafbd" stroke-opacity="0.1">
+      <line x1="684" y1="150" x2="1116" y2="150"/>
+      <line x1="684" y1="177" x2="1116" y2="177"/>
+      <line x1="684" y1="205" x2="1116" y2="205"/>
+      <line x1="684" y1="232" x2="1116" y2="232"/>
+      <line x1="684" y1="260" x2="1116" y2="260"/>
+    </g>
+
+    <path d="M684 240C712 236 730 224 756 228C782 232 800 214 828 212C856 210 874 196 902 200C930 204 948 186 976 188C1004 190 1022 174 1050 178C1078 182 1094 166 1116 164L1116 260L684 260Z" fill="url(#area)"/>
+    <path d="M684 240C712 236 730 224 756 228C782 232 800 214 828 212C856 210 874 196 902 200C930 204 948 186 976 188C1004 190 1022 174 1050 178C1078 182 1094 166 1116 164" stroke="#2f55f0" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M684 250C714 246 732 250 758 247C784 244 802 236 830 238C858 240 876 230 904 232C932 234 950 222 978 224C1006 226 1024 212 1052 214C1080 216 1096 200 1116 196" stroke="#c9f94e" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="5 4"/>
+    <circle cx="1116" cy="164" r="4" fill="#2f55f0" stroke="#16181c" stroke-width="2"/>
+    <circle cx="1116" cy="196" r="3" fill="#c9f94e" stroke="#16181c" stroke-width="2"/>
+  </g>
+</svg>

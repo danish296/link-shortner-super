@@ -1,0 +1,48 @@
+<svg width="1200" height="176" viewBox="0 0 1200 176" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Request pipeline: request, lookup, guards, track, redirect">
+  <rect width="1200" height="176" fill="#ffffff"/>
+  <g font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <g>
+      <rect x="34" y="30" width="204" height="104" rx="16" fill="#eef0f3" stroke="#12161f" stroke-opacity="0.14"/>
+      <text x="54" y="62" font-size="11" font-weight="600" letter-spacing="1.2" fill="#1b36b8">01 · REQUEST</text>
+      <text x="54" y="88" font-size="16" font-weight="600" fill="#0a0e16">GET /launch</text>
+      <text x="54" y="110" font-size="12" fill="#5b6679">Code validated, then</text>
+      <text x="54" y="126" font-size="12" fill="#5b6679">resolved from SQLite.</text>
+    </g>
+    <path d="M246 82h14m0 0-5-5m5 5-5 5" stroke="#2444d8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g>
+      <rect x="268" y="30" width="204" height="104" rx="16" fill="#eef0f3" stroke="#12161f" stroke-opacity="0.14"/>
+      <text x="288" y="62" font-size="11" font-weight="600" letter-spacing="1.2" fill="#1b36b8">02 · GUARDS</text>
+      <text x="288" y="88" font-size="16" font-weight="600" fill="#0a0e16">Paused · expired</text>
+      <text x="288" y="110" font-size="12" fill="#5b6679">Click cap and password</text>
+      <text x="288" y="126" font-size="12" fill="#5b6679">gate answered in HTML.</text>
+    </g>
+    <path d="M480 82h14m0 0-5-5m5 5-5 5" stroke="#2444d8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g>
+      <rect x="502" y="30" width="204" height="104" rx="16" fill="#eef0f3" stroke="#12161f" stroke-opacity="0.14"/>
+      <text x="522" y="62" font-size="11" font-weight="600" letter-spacing="1.2" fill="#1b36b8">03 · DESTINATION</text>
+      <text x="522" y="88" font-size="16" font-weight="600" fill="#0a0e16">A/B + UTM</text>
+      <text x="522" y="110" font-size="12" fill="#5b6679">Variant picked by weight,</text>
+      <text x="522" y="126" font-size="12" fill="#5b6679">campaign params merged.</text>
+    </g>
+    <path d="M714 82h14m0 0-5-5m5 5-5 5" stroke="#2444d8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g>
+      <rect x="736" y="30" width="204" height="104" rx="16" fill="#eef0f3" stroke="#12161f" stroke-opacity="0.14"/>
+      <text x="756" y="62" font-size="11" font-weight="600" letter-spacing="1.2" fill="#1b36b8">04 · TRACK</text>
+      <text x="756" y="88" font-size="16" font-weight="600" fill="#0a0e16">One click row</text>
+      <text x="756" y="110" font-size="12" fill="#5b6679">Geo, device, referrer.</text>
+      <text x="756" y="126" font-size="12" fill="#5b6679">IP stored only as a hash.</text>
+    </g>
+    <path d="M948 82h14m0 0-5-5m5 5-5 5" stroke="#2444d8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g>
+      <rect x="970" y="30" width="196" height="104" rx="16" fill="#f0f3e5" stroke="#6d8c00" stroke-opacity="0.45"/>
+      <text x="990" y="62" font-size="11" font-weight="600" letter-spacing="1.2" fill="#4f6b00">05 · REDIRECT</text>
+      <text x="990" y="88" font-size="16" font-weight="600" fill="#0a0e16">302 Found</text>
+      <text x="990" y="110" font-size="12" fill="#5b6679">No-store headers, so</text>
+      <text x="990" y="126" font-size="12" fill="#5b6679">every visit is counted.</text>
+    </g>
+  </g>
+</svg>
