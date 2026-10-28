@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #04060a;
-  --panel: #080b11;
-  --card: #0c1017;
-  --card2: #141924;
-  --line: rgba(150, 172, 214, 0.12);
-  --line-strong: rgba(150, 172, 214, 0.24);
-  --ink: #eef2f9;
-  --muted: #93a0b8;
+  --bg: #050608;
+  --panel: #0b0d10;
+  --card: #16181c;
+  --card2: #202328;
+  --line: rgba(170, 176, 189, 0.14);
+  --line-strong: rgba(170, 176, 189, 0.26);
+  --ink: #eef0f4;
+  --muted: #9aa1ae;
   --brand: #2f55f0;
   --brand-hover: #4064ff;
   --brand-ink: #8fa6ff;
@@ -18,9 +18,9 @@
   --ok: #3ddc97;
   --warn: #ffc53d;
   --bad: #ff6b81;
-  --input-bg: #0b0f17;
-  --hover: rgba(150, 172, 214, 0.07);
-  --shadow: 0 24px 60px -24px rgba(0, 4, 14, 0.9);
+  --input-bg: #101216;
+  --hover: rgba(170, 176, 189, 0.08);
+  --shadow: 0 24px 60px -24px rgba(0, 0, 0, 0.9);
   --ease-base: cubic-bezier(0.22, 1, 0.36, 1);
   --chart-1: var(--brand);
   --chart-2: var(--accent);
@@ -34,12 +34,12 @@
 }
 
 [data-theme="light"] {
-  --bg: #f2f5fa;
+  --bg: #f6f7f9;
   --panel: #ffffff;
-  --card: #ffffff;
-  --card2: #e9eef7;
-  --line: rgba(12, 26, 54, 0.11);
-  --line-strong: rgba(12, 26, 54, 0.22);
+  --card: #eef0f3;
+  --card2: #e2e5ea;
+  --line: rgba(18, 22, 31, 0.12);
+  --line-strong: rgba(18, 22, 31, 0.22);
   --ink: #0a0e16;
   --muted: #5b6679;
   --brand: #2444d8;
@@ -52,8 +52,9 @@
   --warn: #a86300;
   --bad: #cf2f4d;
   --input-bg: #ffffff;
-  --hover: rgba(12, 26, 54, 0.05);
+  --hover: rgba(18, 22, 31, 0.05);
   --shadow: 0 24px 60px -30px rgba(12, 26, 54, 0.16);
+  --chart-2: #6d8c00;
   --hero-from: #05070c;
   --hero-to: #3f4a5c;
   color-scheme: light;
@@ -75,6 +76,9 @@
   --color-ok: var(--ok);
   --color-warn: var(--warn);
   --color-bad: var(--bad);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, monospace;

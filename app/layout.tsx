@@ -31,12 +31,15 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#04060a",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#f6f7f9" },
+    { media: "(prefers-color-scheme: dark)", color: "#050608" },
+  ],
   width: "device-width",
   initialScale: 1,
 };
 
-const themeScript = `(function(){try{var el=document.documentElement;el.classList.add('js');var t=localStorage.getItem('ls-theme');if(t!=='light'&&t!=='dark'){t='dark';}el.dataset.theme=t;}catch(e){document.documentElement.classList.add('js');document.documentElement.dataset.theme='dark';}})();`;
+const themeScript = `(function(){var el=document.documentElement;el.classList.add('js');try{var stored=localStorage.getItem('ls-theme');var pick=stored==='light'||stored==='dark'?stored:(window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');el.dataset.theme=pick;if(!stored){var mq=window.matchMedia('(prefers-color-scheme: light)');var sync=function(e){if(!localStorage.getItem('ls-theme'))el.dataset.theme=e.matches?'light':'dark';};if(mq.addEventListener)mq.addEventListener('change',sync);else if(mq.addListener)mq.addListener(sync);}}catch(e){el.dataset.theme='dark';}})();`;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

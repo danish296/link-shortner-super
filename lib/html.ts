@@ -9,29 +9,36 @@ const LOGO = `<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns=
 </svg>`;
 
 const BASE_CSS = `
+:root{--bg:#050608;--card:#16181c;--line:rgba(170,176,189,.14);--ink:#eef0f4;--muted:#9aa1ae;
+--input:#101216;--brand:#2f55f0;--brand-hover:#4064ff;--accent:#c9f94e;--bad:#ff6b81;color-scheme:dark}
+@media (prefers-color-scheme: light){:root{--bg:#f6f7f9;--card:#eef0f3;--line:rgba(18,22,31,.12);--ink:#0a0e16;
+--muted:#5b6679;--input:#fff;--brand:#2444d8;--brand-hover:#1b36b8;--accent:#4f6b00;--bad:#cf2f4d;color-scheme:light}}
 *{box-sizing:border-box}
 body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;
-font-family:Geist,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:#eef2f9;background:#04060a;}
-.card{width:100%;max-width:460px;background:#0c1017;border:1px solid rgba(150,172,214,.12);
+font-family:Geist,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);}
+.card{width:100%;max-width:460px;background:var(--card);border:1px solid var(--line);
 border-radius:16px;padding:32px;text-align:center}
 .brand{display:flex;align-items:center;justify-content:center;gap:12px;font-weight:600;font-size:20px;letter-spacing:-.02em;margin-bottom:24px}
-.brand span{color:#eef2f9}
+.brand span{color:var(--ink)}
 h1{font-size:24px;letter-spacing:-.02em;margin:0 0 8px;font-weight:600;text-wrap:balance}
-p{color:#93a0b8;line-height:1.5;font-size:14px;margin:0 0 24px;text-wrap:pretty}
+p{color:var(--muted);line-height:1.5;font-size:14px;margin:0 0 24px;text-wrap:pretty}
 .badge{display:inline-flex;align-items:center;gap:8px;padding:4px 12px;border-radius:999px;font-size:12px;font-weight:600;
-letter-spacing:.08em;text-transform:uppercase;background:rgba(201,249,78,.14);border:1px solid rgba(201,249,78,.3);color:#c9f94e;margin-bottom:16px}
-input{width:100%;padding:8px 12px;border-radius:12px;border:1px solid rgba(150,172,214,.14);background:#0b0f17;
-color:#eef2f9;font-size:14px;outline:none;margin-bottom:12px;font-family:inherit}
-input:focus{border-color:#2f55f0;box-shadow:0 0 0 3px rgba(47,85,240,.28)}
+letter-spacing:.08em;text-transform:uppercase;background:color-mix(in srgb,var(--accent) 14%,transparent);
+border:1px solid color-mix(in srgb,var(--accent) 30%,transparent);color:var(--accent);margin-bottom:16px}
+input{width:100%;padding:8px 12px;border-radius:12px;border:1px solid var(--line);background:var(--input);
+color:var(--ink);font-size:14px;outline:none;margin-bottom:12px;font-family:inherit}
+input:focus{border-color:var(--brand);box-shadow:0 0 0 3px color-mix(in srgb,var(--brand) 28%,transparent)}
 button{width:100%;padding:8px 12px;border:none;border-radius:12px;font-size:14px;font-weight:600;cursor:pointer;color:#fff;
-background:#2f55f0;font-family:inherit}
-button:hover{background:#4064ff}
-.err{color:#ff6b81;background:rgba(255,107,129,.12);border:1px solid rgba(255,107,129,.3);padding:12px;border-radius:12px;font-size:13px;margin-bottom:12px}
-.foot{margin-top:24px;font-size:12px;color:#93a0b8}
-.foot a{color:#93a0b8;text-decoration:none}
-.foot a:hover{color:#eef2f9}
+background:var(--brand);font-family:inherit}
+button:hover{background:var(--brand-hover)}
+.err{color:var(--bad);background:color-mix(in srgb,var(--bad) 12%,transparent);
+border:1px solid color-mix(in srgb,var(--bad) 30%,transparent);padding:12px;border-radius:12px;font-size:13px;margin-bottom:12px}
+.foot{margin-top:24px;font-size:12px;color:var(--muted)}
+.foot a{color:var(--muted);text-decoration:none}
+.foot a:hover{color:var(--ink)}
 .wrap{text-align:center}
-.pulse{width:48px;height:48px;border-radius:50%;margin:0 auto 24px;border:3px solid rgba(47,85,240,.25);border-top-color:#2f55f0;animation:spin 0.9s linear infinite}
+.pulse{width:48px;height:48px;border-radius:50%;margin:0 auto 24px;border:3px solid color-mix(in srgb,var(--brand) 25%,transparent);
+border-top-color:var(--brand);animation:spin 0.9s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
 `;
 
@@ -56,7 +63,7 @@ export function renderErrorPage(options: {
      <h1>${escapeHtml(options.title)}</h1>
      <p>${escapeHtml(options.message)}</p>
      <a href="/pricing" style="display:inline-block;padding:8px 12px;border-radius:12px;text-decoration:none;color:#fff;
-        font-size:14px;font-weight:600;background:#2f55f0">Create your own short links</a>`
+        font-size:14px;font-weight:600;background:var(--brand)">Create your own short links</a>`
   );
 }
 

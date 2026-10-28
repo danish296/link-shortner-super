@@ -90,7 +90,7 @@ export function AreaChart({ id, data, height = 240 }: { id: string; data: ChartP
         <path
           d={uniqueLine}
           fill="none"
-          stroke="var(--accent)"
+          stroke="var(--chart-2)"
           strokeWidth="1.8"
           strokeLinecap="round"
           strokeDasharray="5 4"
@@ -105,7 +105,7 @@ export function AreaChart({ id, data, height = 240 }: { id: string; data: ChartP
               cx={uniquePoints[uniquePoints.length - 1].x}
               cy={uniquePoints[uniquePoints.length - 1].y}
               r="3"
-              fill="var(--accent)"
+              fill="var(--chart-2)"
               stroke="var(--card)"
               strokeWidth="2"
             />

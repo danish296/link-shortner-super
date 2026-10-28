@@ -8,7 +8,21 @@ export function ThemeToggle({ className }: { className?: string }) {
   const [theme, setTheme] = useState<"dark" | "light">("dark");
 
   useEffect(() => {
-    setTheme(document.documentElement.dataset.theme === "light" ? "light" : "dark");
+    const root = document.documentElement;
+    const read = () => setTheme(root.dataset.theme === "light" ? "light" : "dark");
+    read();
+
+    const media = window.matchMedia("(prefers-color-scheme: light)");
+    const onSystemChange = () => {
+      try {
+        if (localStorage.getItem("ls-theme")) return;
+      } catch {
+        // storage may be unavailable in private mode
+      }
+      read();
+    };
+    media.addEventListener("change", onSystemChange);
+    return () => media.removeEventListener("change", onSystemChange);
   }, []);
 
   function toggle() {

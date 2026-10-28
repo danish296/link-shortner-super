@@ -108,7 +108,7 @@ export default async function DashboardPage() {
                 <span className="h-2 w-2 rounded-full bg-brand" /> clicks
               </span>
               <span className="flex items-center gap-2">
-                <span className="h-2 w-2 rounded-full bg-accent" /> uniques
+                <span className="h-2 w-2 rounded-full bg-chart-2" /> uniques
               </span>
             </div>
           }
